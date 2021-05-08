@@ -1,10 +1,139 @@
 <!DOCTYPE: HTML>
+<html lang="en">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@700;900&display=swap" rel="stylesheet">
 
-<style>
-  
-</style>
+    <style>
+  @media screen and (max-width: 600px) {
+      .nav-bar a{
+          float: none;
+          width:100%;
+      }
+  }
+  .section{
+      font-family: 'Bebas Neue';
+  }
 
-<body>
   
+
+  .section{
+      display: flex;
+  }
+
+
+  .bodytext{
+      font-family: 'Roboto';
+  }
+
+
+  /*Styling the navigation bar*/
+  #header{
+      position: flex;
+      color: #9DD9D2;
+  }
+
+  #Title{
+      font-size:xx-large;
+      font-family: 'Bebas Neue';
+      color: black;
+      -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #F4D06F;
+  }
+
+  
+
+  .nav-bar{
+    position: fixed;
+    }
+
+
+  .nav-link{
+      font-family: 'Roboto';
+      text-decoration: none;
+      color: black;
+      font-size: 40px;
+      font-weight: 100;
+      margin: 10px;
+  }
+
+/*Styling the process section*/
+
+    #Process{
+        display: flex;
+        position: relative;
+    }
+
+
+    /*Styling What's in the Box section*/
+  .productimg{
+
+      width: 300px;
+  }
+
+
+  .steps{
+      font-family: 'Roboto';
+      font-size: 90px;
+      font-weight: bold;
+      color: #9DD9D2;
+      -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: black;
+  }
+    </style>
+
+ <body>
+    <div id="header">
+    <h1 id="Title">BUGBOX</h1>
+        <img src= "https://www.google.com/url?sa=i&url=https%3A%2F%2Ficons8.com%2Ficon%2F417%2Fbug&psig=AOvVaw0Rng00ATssqz9FhsRmOyqz&ust=1620344944006000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCMDG17zds_ACFQAAAAAdAAAAABAD" id='header-img'>
+  
+      <nav id="nav-bar">
+          <a href="#About" class="nav-link">About</a>
+          <a href="#Subscribe" class="nav-link">Subscribe</a>
+          <a href="#Boxes" class="nav-link">Boxes</a>
+      </nav>
+    </div>
+
+    <h1 class="section">Subscribe</h1>
+     <!--Cards-->
+    <div>
+
+    </div="Process">
+    <h1 class="section" id='Subscribe'>How It Works</h1>
+    <h2 class="steps">1.</h2>
+    <p class="bodytext"> Each quarter we send you the options from our curated box of goodies. </p>
+    <h2 class="steps">2.</h2>
+    <p class="bodytext"> Pick what you want. This includes one gadget to try, the rest you get to keep. </p>
+    <h2 class="steps">3.</h2>
+    <p class="bodytext"> We send it to you. Decide if you want to keep your trial item or send it back. </p>
+
+    <div id="BoxContent">
+        <h1 id="Boxes" class="section">What's in the box?</h1>
+        <img src="https://cf.shopee.co.id/file/f023be52b678e0b41176d04737414367" class="productimg">
+        <p class="product-desc">Adonit Snap 2 Bluetooth Selfie Touch Pen </p>
+        <img src="https://cdn.shopify.com/s/files/1/0069/9292/0627/products/dotspink_620a1437-1135-4743-8475-aa11096d8768_620x.jpg?v=1603448461" class="productimg">
+        <p class-"product-desc"> Moft X Foldable Cell Phone Stand</p>
+   
+    </div>
+
+
+    <div>
+        <h1 id="About" class="section">Our Impact</h1>
+        <p class="bodytext"> We’re commited to diversifying the tech workforce. Every BugBox subscription contributes to STEM educational and workforce programs for underrepresented groups in tech. </p>
+        <video id="video" width="320" height=auto controls>
+            <source src="https://www.pexels.com/video/girl-doing-online-class-4494802/">
+        </video>
+    </div>
+
+    <form id="form" action=" https://www.freecodecamp.com/email-submit">
+        <label for="email" id="email-label"> Email</label>
+        <input type="email" name ="email" id="email" placeholder="e-mail">
+        <input type="submit" value="submit" id=submit>
+    </form>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
+
+</html>
+
   
