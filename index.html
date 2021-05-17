@@ -11,7 +11,7 @@
       }
   }
 
-
+/*Styling the section titles section*/
   .section{
       font-family: 'Bebas Neue';
       display: absolute;
@@ -20,12 +20,18 @@
 
   .section h1{
       color:black;
+      align-items: center;
+    justify-content: center;
   };
-  
-  #Boxes{
-      background-color: coral;
-  }
 
+  .section{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+  
+
+  
 
  
   body{
@@ -42,8 +48,7 @@
       
       font-family: 'Roboto';
       text-align: left;
-      align-self: start;
-      display: flex;
+      width: 50%;      
   }
 
 
@@ -51,23 +56,24 @@
 
 
 /*Styling the header*/
-  #header{
-
-    background-color: #9DD9D2;
-  }
 
   
  .navbar{
      overflow: hidden;
-     position: fixed;
-     top: 0px;
      height: 200px;
-     width: auto;
-    
-    
-     
+     background-color: #9DD9D2;
+     align-items: center;
+   
  }
 
+ .nav-bar *{
+     display: inline;
+     
+ }
+ 
+ #right-nav-bar{
+     float: right;
+ }
  
 /*Styling the logo title*/
   #Title{
@@ -88,6 +94,9 @@
       font-weight: 100px;
   }
 
+
+
+
 /*Styling the process section*/
 
 #Subscribe{
@@ -96,20 +105,18 @@
 }
 
 #Process{
-        display: grid;
-        grid-template-columns: 150px 150px 150px 150px 150px 150px 150px;
+        display: flex;
+        flex-direction: row-reverse;
         margin-top: 200px;
+        justify-self: center;
+        align-items: center;
+        
     }
 
-    .process{
-      background-color:#FFF8F0;
-  }
-
-
+  
   .steps{
-      display: flex;
       font-family: 'Roboto';
-      font-size: 90px;
+      font-size: 120px;
       font-weight: bold;
       color: #9DD9D2;
       -webkit-text-stroke-width: 3px;
@@ -119,7 +126,7 @@
 
     #BoxContent{
         display: grid;
-        margin-top: 100px;
+        margin-top: 50px;
         grid-template-columns: 100px 100px 200px 200px 100px;
         grid-template-rows: 75px;
         background-color: white;
@@ -129,14 +136,17 @@
     }
 
    #Impact{
-       margin-top: 200px;
+       margin-top: 100px;
+       flex-wrap: wrap;
+       
    }
 
   .productimg{
 
       width: 300px;
   }
-/*Styling the Process section*/
+
+
 
  
     </style>
@@ -167,8 +177,10 @@
         <!--Subscribe Cards-->
 
         <!--process-->
-       <div id="Process">
+       
         <h1 class="section" id='Subscribe'>How It Works</h1>
+        
+        <div id="Process"></div>
         <h2 class="steps">1.</h2>
         <p class="bodytext"> Each quarter we send you the options from our curated box of goodies. </p>
         <h2 class="steps">2.</h2>
